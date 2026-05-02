@@ -1,11 +1,11 @@
-# Code
+# StCP Codebase
 
 This folder contains the core code and minimal datasets for reproducing the paper experiments.
 
 ## 1. Directory structure
 
 ```text
-Code/
+StCP/
 ├─ Main/                 # Core methods and shared utilities
 │  ├─ GLCP.py, SLCP.py, SCP.py, SSAE.py, RLCP.py
 │  ├─ Predictor.py, QuanRegressor.py, engGenerator.py
@@ -47,7 +47,7 @@ Use Python 3.10+ (recommended). Typical dependencies:
 
 ## 4. Running code
 
-> Run commands from **`Code/`** root.
+> Run commands from **`StCP/`** root.
 
 ### 4.1 Simulation experiments
 
@@ -97,10 +97,10 @@ python RealAnalysis/sum_tab.py
 
 ## 5. Outputs
 
-Scripts usually write outputs to sibling folders created on demand (e.g., `SimResult/`, `Log/`, `Figure/` under `Code/`).
+Scripts usually write outputs to sibling folders created on demand (e.g., `SimResult/`, `Log/`, `Figure/` under `StCP/`).
 
 ## 6. Notes
 
 - `SimuAnalysis/config.py` is the central place to adjust simulation grids and hyperparameters.
 - `RealAnalysis/procedure.py` is the central pipeline for real-data experiments.
-- If a dataset file is missing, place it under `Code/Dataset/` with the expected relative path used in the script.
+- If a dataset file is missing, place it under `StCP/Dataset/` with the expected relative path used in the script.
